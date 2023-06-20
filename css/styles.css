@@ -21,7 +21,39 @@ a {
 
 /* ==== Header ==== */
 
-header {
+@media (min-width: 375px) and (max-width: 420px) {
+
+    header {
+        background-color: #92c3ee;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 3rem;
+    }
+
+    header div img {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header form {
+        display: none;
+    }
+
+    header label {
+        position: absolute;
+        right: 15px;
+    }
+}
+
+
+
+/* header {
     background-color: rgb(124, 175, 252);
     color: white;
     padding: 20px;
@@ -43,76 +75,152 @@ nav ul li {
 header div img {
     width: 120px;
     height: 100px;
-}
+} */
 
 /* ==== Main ==== */
 
-main {
-    background-color: rgb(75, 135, 190);
+@media (min-width: 375px) and (max-width: 420px) {
+
+    main {
+        background-color: #80a6c7;
+    }
+
+    h2 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        margin: 40px 10px 0 20px;
+        border-style: double;
+        border-color: #414e79;
+        border-width: 10px;
+    }
+
+    .main__article img {
+        width: 75%;
+        height: 80%;
+    }
+
+    .main__article button {
+        margin: 15px;
+        padding: 5px;
+    }
 }
 
-h2 {
-    font-size: 2rem;
-    color: white;
-    border: 5px rgb(116, 77, 179) double;
-    text-align: center;
-}
+/* main {
+        background-color: rgb(75, 135, 190);
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: white;
+        border: 5px rgb(116, 77, 179) double;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+    }
+    
+    main section div img {
+        width: 90%;
+        height: 400px;
+    }
+    
+    
+    .main__article {
+        display: inline-block;
+        width: 150px;
+        height: 300px;
+        margin: 150px;
+        border: 5px rgb(116, 77, 179) double;
+        padding: 15px;
+    }
+    
+    .main__article__img {
+        width: 260px;
+        height: 310px;
+    }
+    
+    .main__article__button {
+        display: flex;
+        justify-content: center;
+    }
 
-h3 {
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-}
-
-main section div img {
-    width: 90%;
-    height: 400px;
-}
-
-
-.articulos-index {
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    margin: 150px;
-    border: 5px rgb(116, 77, 179) double;
-    padding: 15px;
-}
-
-.img-article {
-    width: 260px;
-    height: 310px;
-}
-
-.botones {
-    display: flex;
-    justify-content: center;
+.main__carousel__button {
+    height: 5%;
 }
 
 /* ==== Footer ==== */
 
-footer {
-    background-color: rgb(95, 93, 117);
+@media (min-width: 375px) and (max-width: 420px) {
+    footer {
+        background-color: #656b7e;
+    }
 }
 
 h4 {
     font-size: 1.25rem;
-    color: rgb(36, 36, 36);
+    color: black;
+    display: flex;
+    justify-content: center;
 }
 
-.redes-sociales {
-    width: 50px;
-    height: 50px;
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 
-.metodos-pago {
-    width: 60px;
-    height: 40px;
+.footer__redes {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
 }
 
-.secciones-footer {
-    display: inline-block;
-    padding: 0px 150px;
+.footer__pagos {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
 }
 
-/* EL CSS ESTA LINKEADO A TODAS LAS PÁGINAS HTML PERO SOLO TRABAJÉ SOBRE EL INDEX */
+.footer__contacto__news {
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.footer__contacto {
+    grid-row: 1;
+}
+
+.footer__news {
+    grid-row: 2;
+}
+
+
+.footer__img__redes {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__img__pagos {
+    width: 40px;
+    height: 20px;
+}

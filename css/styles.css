@@ -51,31 +51,43 @@ a {
     }
 }
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    header {
+        background-color: #92c3ee;
+        color: white;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: last baseline;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
 
 
-/* header {
-    background-color: rgb(124, 175, 252);
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: last baseline;
+    header div img {
+        width: 120px;
+        height: 100px;
+    }
+
+    header label {
+        display: none;
+    }
+
 }
 
-h1 {
-    font-size: 2.75rem;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-    font-size: 2rem;
-}
-
-header div img {
-    width: 120px;
-    height: 100px;
-} */
 
 /* ==== Main ==== */
 
@@ -120,55 +132,58 @@ header div img {
     }
 }
 
-/* main {
-        background-color: rgb(75, 135, 190);
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    main {
+        background-color: #80a6c7;
     }
-    
+
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
         color: white;
-        border: 5px rgb(116, 77, 179) double;
-        text-align: center;
     }
-    
+
     h3 {
-        font-size: 1.5rem;
-        color: white;
-        text-align: center;
-    }
-    
-    main section div img {
-        width: 90%;
-        height: 400px;
-    }
-    
-    
-    .main__article {
-        display: inline-block;
-        width: 150px;
-        height: 300px;
-        margin: 150px;
-        border: 5px rgb(116, 77, 179) double;
-        padding: 15px;
-    }
-    
-    .main__article__img {
-        width: 260px;
-        height: 310px;
-    }
-    
-    .main__article__button {
+        font-size: 1.8rem;
         display: flex;
         justify-content: center;
     }
 
-.main__carousel__button {
-    height: 5%;
+    .main__section__articulos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        height: 550px;
+        margin: 40px 10px 40px 20px;
+        border-style: double;
+        border-color: #414e79;
+        border-width: 20px;
+    }
+
+    .main__article img {
+        width: 75%;
+        height: 80%;
+    }
+
+    .main__article button {
+        margin: 15px;
+        padding: 5px;
+    }
 }
 
 /* ==== Footer ==== */
 
 @media (min-width: 375px) and (max-width: 420px) {
+
     footer {
         background-color: #656b7e;
     }
@@ -199,18 +214,12 @@ h4 {
     text-align: center;
 }
 
-.footer__contacto__news {
-    grid-column: 3;
-    grid-row: 1;
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
 .footer__contacto {
     grid-row: 1;
 }
 
 .footer__news {
+    grid-column: 3;
     grid-row: 2;
 }
 
@@ -223,4 +232,59 @@ h4 {
 .footer__img__pagos {
     width: 40px;
     height: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    footer {
+        background-color: #656b7e;
+    }
+
+
+    h4 {
+        font-size: 1.6rem;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .footer__redes {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .footer__pagos {
+        grid-column: 2;
+        text-align: center;
+    }
+
+    .footer__contacto {
+        grid-column: 3;
+        text-align: center;
+    }
+
+    .footer__news {
+        grid-column: 4;
+        grid-row: 1;
+        text-align: center;
+    }
+
+
+    .footer__img__redes {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    .footer__img__pagos {
+        width: 80px;
+        height: 40px;
+        margin: 10px;
+    }
 }

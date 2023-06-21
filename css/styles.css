@@ -21,6 +21,24 @@ a {
 
 p {
     text-align: justify;
+    font-family: 'lora', serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'lora', serif;
+    font-weight: 400;
 }
 
 /* ==== Header ==== */
@@ -47,6 +65,14 @@ p {
 
     header nav {
         display: none;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .container-fluid {
+        background-color: #92c3ee;
     }
 
     header form {
@@ -94,6 +120,9 @@ p {
         display: none;
     }
 
+    .header__hamburguesa {
+        display: none;
+    }
 }
 
 
@@ -349,3 +378,4 @@ h4 {
 
 /* Las páginas con versión mobile y desktop son index.html y contacto.html. */
 /* Las demás tienen los estilos aplicados solo en la versión mobile. */
+/* No logré que el menú hamburguesa se despliegue sobre el main en vez de sobre el header */

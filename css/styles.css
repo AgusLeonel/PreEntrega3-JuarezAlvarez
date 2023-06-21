@@ -19,6 +19,10 @@ a {
     color: white;
 }
 
+p {
+    text-align: justify;
+}
+
 /* ==== Header ==== */
 
 @media (min-width: 375px) and (max-width: 420px) {
@@ -132,11 +136,46 @@ a {
         margin: 15px;
         padding: 5px;
     }
-}
 
-main section iframe {
-    width: 90%;
-    height: 90%;
+    .main__categorias {
+        list-style: disc;
+        margin: 0 0 20px 30px;
+    }
+
+    .main__producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        margin: 10%;
+        margin-top: 0%;
+    }
+
+    .main__producto button {
+        margin-top: 15px;
+        width: 100%;
+        height: 30px;
+    }
+
+    .main__otros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+
+    .main__categorias {
+        list-style: disc;
+        margin: 0 0 20px 30px;
+    }
+
+    main section iframe {
+        width: 90%;
+        height: 90%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -191,6 +230,10 @@ main section iframe {
         width: 80%;
     }
 
+    main section iframe {
+        width: 90%;
+        height: 90%;
+    }
 }
 
 /* ==== Footer ==== */
@@ -303,3 +346,6 @@ h4 {
         margin: 10px;
     }
 }
+
+/* Las páginas con versión mobile y desktop son index.html y contacto.html. */
+/* Las demás tienen los estilos aplicados solo en la versión mobile. */

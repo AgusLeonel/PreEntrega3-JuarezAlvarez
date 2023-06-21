@@ -22,7 +22,7 @@
                 <li> <a href="../index.html"> Inicio </a></li>
                 <li> <a href="./productos.html"> Productos </a> </li>
                 <li> <a href="./contacto.html"> Contacto </a> </li>
-                <li> <a href="./ofertas-productos-destacados.html"> Destacado </a> </li>
+                <li> <a href="./acerca-de.html"> Acerca de </a> </li>
             </ul>
         </nav>
 
@@ -31,13 +31,17 @@
             <button> Buscar </button>
         </form>
 
+        <label for="menu">
+            <img src="../images/menu.png" alt="menu">
+        </label>
+
         <hr>
 
     </header>
 
     <main>
 
-        <section>
+        <section class="main__producto">
             <h2> Tazas personalizadas </h2>
             <img src="../images/taza-ceramica.jpg" alt="tazas personalizadas">
             <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est repellat explicabo deserunt ad, ea atrerum
@@ -46,7 +50,7 @@
             <button> AGREGAR AL CARRITO </button>
         </section>
 
-        <div>
+        <div class="main__producto">
             <h3> Descripción </h3>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sunt totam, hic accusantium voluptatum
                 illo quam, pariatur dolor nemo eos, praesentium obcaecati numquam! Numquam corrupti, amet fuga expedita
@@ -56,55 +60,57 @@
         </div>
 
         <section>
+
             <h4> Otros productos que podrían interesarte </h4>
 
-            <article>
-                <img src="../images/buzo.jpg" alt="buzos personalizados">
-                <!-- <a href="./buzos.html">Buzos personalizados</a> aún no está hecha la página-->
-                <p> Buzos personalizados </p>
-            </article>
+            <div class="main__otros">
+                <article>
+                    <img src="../images/buzo.jpg" alt="buzos personalizados">
+                    <!-- <a href="./buzos.html">Buzos personalizados</a> aún no está hecha la página-->
+                    <p> Buzos personalizados </p>
+                </article>
 
-            <article>
-                <img src="../images/remera.jpg" alt="remeras personalizadas">
-                <!-- <a href="./remeras.html">Remeras personalizadas</a> aún no está hecha la página-->
-                <p> Remeras personalizadas </p>
-            </article>
+                <article>
+                    <img src="../images/remera.jpg" alt="remeras personalizadas">
+                    <!-- <a href="./remeras.html">Remeras personalizadas</a> aún no está hecha la página-->
+                    <p> Remeras personalizadas </p>
+                </article>
 
-            <article>
-                <img src="../images/botella.jpg" alt="botellas personalizadas">
-                <!-- <a href="./botella.html"> Botellas personalizadas</a> aún no está hecha la página-->
-                <p> Botellas Personalizadas </p>
-            </article>
-
+                <article>
+                    <img src="../images/botella.jpg" alt="botellas personalizadas">
+                    <!-- <a href="./botella.html"> Botellas personalizadas</a> aún no está hecha la página-->
+                    <p> Botellas Personalizadas </p>
+                </article>
+            </div>
 
         </section>
 
 
     </main>
 
-    <footer>
+    <footer class="footer__grid">
 
-        <div>
+        <div class="footer__redes">
             <h5> Redes Sociales </h5>
             <ul>
-                <li> <img src="../images/facebook.png" alt="facebook"></li> <a target="blank"
+                <li> <img src="../images/facebook.png" alt="facebook" class="footer__img__redes"></li> <a target="blank"
                     href="https://www.facebook.com/people/Xuru-Indumentaria-y-Sublimaci%C3%B3n/100063737402370/">
                     Facebook </a>
-                <li> <img src="../images/instagram.png" alt="instagram"></li> <a target="blank"
-                    href="https://www.instagram.com/xuru_vic_kids/"> Instagram </a>
+                <li> <img src="../images/instagram.png" alt="instagram" class="footer__img__redes"></li> <a
+                    target="blank" href="https://www.instagram.com/xuru_vic_kids/"> Instagram </a>
             </ul>
         </div>
 
-        <div>
+        <div class="footer__pagos">
             <h5> Métodos de pago </h5>
             <ul>
-                <li> <img src="../images/visa.jpg" alt="visa"></li>
-                <li> <img src="../images/mastercard.png" alt="mastercard"></li>
-                <li> <img src="../images/mercadopago.jpg" alt="mercadopago"></li>
+                <li> <img src="../images/visa.jpg" alt="visa" class="footer__img__pagos"></li>
+                <li> <img src="../images/mastercard.png" alt="mastercard" class="footer__img__pagos"></li>
+                <li> <img src="../images/mercadopago.jpg" alt="mercadopago" class="footer__img__pagos"></li>
             </ul>
         </div>
 
-        <address>
+        <address class="footer__contacto">
             <h5> Contacto </h5>
             <ul>
                 <li> email@gmail.com </li>
@@ -113,7 +119,7 @@
             </ul>
         </address>
 
-        <div>
+        <div class="footer__news">
             <h5> Newsletter </h5>
             <form action="">
                 <input type="email" placeholder="Email">

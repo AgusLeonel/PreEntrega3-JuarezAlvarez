@@ -33,6 +33,10 @@ a {
         font-size: 3rem;
     }
 
+    h1 {
+        font-size: 3.5rem;
+    }
+
     header div img {
         display: none;
     }
@@ -101,6 +105,7 @@ a {
         font-size: 2rem;
         display: flex;
         justify-content: center;
+        color: #0d2850;
     }
 
     h3 {
@@ -114,11 +119,8 @@ a {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        height: 500px;
-        margin: 40px 10px 0 20px;
-        border-style: double;
-        border-color: #414e79;
-        border-width: 10px;
+        height: auto;
+        margin: 0px 10px 0px 20px;
     }
 
     .main__article img {
@@ -132,6 +134,11 @@ a {
     }
 }
 
+main section iframe {
+    width: 90%;
+    height: 90%;
+}
+
 @media (min-width: 1024px) and (max-width: 1200px) {
 
     main {
@@ -139,14 +146,14 @@ a {
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         color: white;
     }
 
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
     }
@@ -155,6 +162,7 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: auto;
     }
 
     .main__article {
@@ -163,7 +171,7 @@ a {
         align-items: center;
         width: 33%;
         height: 550px;
-        margin: 40px 10px 40px 20px;
+        margin: 40px 10px 40px 10px;
         border-style: double;
         border-color: #414e79;
         border-width: 20px;
@@ -178,6 +186,11 @@ a {
         margin: 15px;
         padding: 5px;
     }
+
+    .main__input {
+        width: 80%;
+    }
+
 }
 
 /* ==== Footer ==== */
@@ -199,7 +212,7 @@ h4 {
 .footer__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
 }
 
 .footer__redes {
@@ -215,14 +228,16 @@ h4 {
 }
 
 .footer__contacto {
+    grid-column: 3;
     grid-row: 1;
+    text-align: center;
 }
 
 .footer__news {
     grid-column: 3;
     grid-row: 2;
+    text-align: right;
 }
-
 
 .footer__img__redes {
     width: 30px;

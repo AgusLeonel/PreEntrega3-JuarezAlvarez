@@ -1,0 +1,25 @@
+// ==== Main ==== //
+
+main {
+    background-color: #80a6c7;
+}
+
+h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #0d2850;
+}
+
+h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main__section__articulos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}

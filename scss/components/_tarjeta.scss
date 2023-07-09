@@ -1,4 +1,10 @@
-@media (min-width: 375px) and (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .main__section__articulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .main__article {
         display: flex;
@@ -20,7 +26,7 @@
     }
 }
 
-@media (min-width:421px) and (max-width:1023px) {
+@media (min-width:769px) and (max-width:1023px) {
 
     .main__article {
         display: flex;
@@ -32,6 +38,7 @@
         border-style: double;
         border-color: #414e79;
         border-width: 20px;
+        overflow: auto;
 
         img {
             width: 75%;

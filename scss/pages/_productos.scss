@@ -1,4 +1,159 @@
-.main__categorias {
-    list-style: disc;
-    margin: 0 0 20px 30px;
+.main {
+
+    &__categorias {
+        list-style: disc;
+        margin: 0 0 20px 30px;
+    }
+
+    &__section__productos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        margin: 2rem;
+        gap: 2rem;
+
+        &__buzos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 1;
+            grid-row: 1;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        &__remeras {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 2;
+            grid-row: 1;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        &__tazas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 3;
+            grid-row: 1;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        &__fluo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 1;
+            grid-row: 2;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        &__jarritos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 2;
+            grid-row: 2;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+
+        &__botellas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 33%;
+            height: 550px;
+            margin: 40px 10px 40px 10px;
+            border-style: double;
+            border-color: #414e79;
+            border-width: 20px;
+            grid-column: 3;
+            grid-row: 2;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                margin: 15px;
+                padding: 5px;
+            }
+        }
+    }
 }

@@ -4,5 +4,10 @@ main section iframe {
 }
 
 .main__input {
-    width: 80%;
+    width: 75%;
+
+    &__motivo {
+        width: 75%;
+        height: 50px;
+    }
 }

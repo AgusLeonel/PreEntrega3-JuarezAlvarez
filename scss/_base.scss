@@ -19,7 +19,7 @@ a {
     color: white;
 }
 
-p {
+p, label {
     text-align: justify;
     font-family: 'lora', serif;
     font-weight: 400;
@@ -35,6 +35,16 @@ h6,
 a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
 li {
@@ -47,4 +57,5 @@ h1 {
     font-size: 3.5rem;
 }
 
-$bgcolor: linear-gradient(90deg, #282552 0%, #3a4e86 35%, #276b8a 100%)
+$bgcolor: linear-gradient(90deg, #282552 0%, #3a4e86 35%, #276b8a 100%);
+$bordercolor: linear-gradient(180deg, #282552 0%, #4f3a86 33%, #276b8a 100%);

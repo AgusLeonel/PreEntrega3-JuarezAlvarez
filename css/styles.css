@@ -19,7 +19,7 @@ a {
   color: white;
 }
 
-p {
+p, label {
   text-align: justify;
   font-family: "lora", serif;
   font-weight: 400;
@@ -35,6 +35,16 @@ h6,
 a {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
 }
 
 li {
@@ -75,9 +85,9 @@ header {
     padding: 0;
   }
   .header__hamburguesa {
-    position: fixed;
+    position: relative;
     top: auto;
-    right: 60px;
+    right: -30px;
     filter: drop-shadow(4px 4px 2px #282552);
   }
   .menu-desplegado {
@@ -164,7 +174,6 @@ h2 {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  color: #0d2850;
 }
 
 h3 {
@@ -230,7 +239,6 @@ footer {
   }
   .footer__titulo {
     font-size: 1.25rem;
-    color: black;
     display: flex;
     justify-content: center;
   }
@@ -301,10 +309,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 550px;
+    height: 450px;
     margin: 40px 10px 40px 40px;
-    border-style: double;
-    border-width: 20px;
     overflow: hidden;
   }
   .main__article img {
@@ -317,7 +323,10 @@ footer {
   }
   .main__article:hover {
     box-shadow: 5px 20px 20px;
+    transform: scale(1.1);
     transition-duration: 200ms;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #282552 0%, #4f3a86 33%, #276b8a 100%);
   }
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -326,10 +335,8 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 33%;
-    height: 550px;
-    margin: 40px 10px 40px 40px;
-    border-style: double;
-    border-width: 20px;
+    height: 400px;
+    margin: 40px 40px 40px 40px;
     overflow: hidden;
   }
   .main__article img {
@@ -342,7 +349,10 @@ footer {
   }
   .main__article:hover {
     box-shadow: 5px 20px 20px;
+    transform: scale(1.1);
     transition-duration: 200ms;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #282552 0%, #4f3a86 33%, #276b8a 100%);
   }
 }
 @media (min-width: 1201px) {
@@ -352,9 +362,7 @@ footer {
     align-items: center;
     width: 33%;
     height: 550px;
-    margin: 40px 10px 40px 40px;
-    border-style: double;
-    border-width: 20px;
+    margin: 40px 40px 40px 40px;
     overflow: hidden;
   }
   .main__article img {
@@ -368,6 +376,9 @@ footer {
   .main__article:hover {
     box-shadow: 5px 20px 20px;
     transition-duration: 200ms;
+    transform: scale(1.1);
+    border-radius: 30px;
+    background: linear-gradient(180deg, #282552 0%, #4f3a86 33%, #276b8a 100%);
   }
 }
 main section iframe {
@@ -387,160 +398,228 @@ main section iframe {
   list-style: disc;
   margin: 0 0 20px 30px;
 }
-.main__section__productos {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  margin: 2rem;
-  gap: 2rem;
-}
-.main__section__productos__buzos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 1;
-  grid-row: 1;
-}
-.main__section__productos__buzos img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__buzos button {
-  margin: 15px;
-  padding: 5px;
-}
-.main__section__productos__remeras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 2;
-  grid-row: 1;
-}
-.main__section__productos__remeras img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__remeras button {
-  margin: 15px;
-  padding: 5px;
-}
-.main__section__productos__tazas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 3;
-  grid-row: 1;
-}
-.main__section__productos__tazas img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__tazas button {
-  margin: 15px;
-  padding: 5px;
-}
-.main__section__productos__fluo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 1;
-  grid-row: 2;
-}
-.main__section__productos__fluo img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__fluo button {
-  margin: 15px;
-  padding: 5px;
-}
-.main__section__productos__jarritos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 2;
-  grid-row: 2;
-}
-.main__section__productos__jarritos img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__jarritos button {
-  margin: 15px;
-  padding: 5px;
-}
-.main__section__productos__botellas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 33%;
-  height: 550px;
-  margin: 40px 10px 40px 10px;
-  border-style: double;
-  border-color: #414e79;
-  border-width: 20px;
-  grid-column: 3;
-  grid-row: 2;
-}
-.main__section__productos__botellas img {
-  width: 75%;
-  height: 80%;
-}
-.main__section__productos__botellas button {
-  margin: 15px;
-  padding: 5px;
-}
 
-.main__producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  margin: 10%;
-  margin-top: 0%;
+@media (min-width: 320px) and (max-width: 768px) {
+  .main__section__productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 0px 10px 20px 20px;
+    overflow: hidden;
+  }
+  .main__producto img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__producto button {
+    width: 50%;
+  }
+  .main__producto:hover {
+    box-shadow: 5px 20px 20px;
+    transition-duration: 200ms;
+  }
 }
-.main__producto button {
-  margin-top: 15px;
-  width: 100%;
-  height: 30px;
+@media (min-width: 769px) {
+  .main__producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__producto img {
+    border-radius: 40px;
+  }
+  .main__producto:hover {
+    box-shadow: 5px 20px 20px;
+    transform: scale(1.1);
+    transition-duration: 200ms;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #282552 0%, #4f3a86 33%, #276b8a 100%);
+  }
+  .main__section__productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin: 2rem;
+    gap: 2rem;
+    margin-bottom: 0%;
+  }
+  .main__section__productos__buzos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .main__section__productos__buzos img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__buzos button {
+    margin: 15px;
+    padding: 5px;
+  }
+  .main__section__productos__remeras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .main__section__productos__remeras img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__remeras button {
+    margin: 15px;
+    padding: 5px;
+  }
+  .main__section__productos__tazas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .main__section__productos__tazas img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__tazas button {
+    margin: 15px;
+    padding: 5px;
+  }
+  .main__section__productos__fluo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .main__section__productos__fluo img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__fluo button {
+    margin: 15px;
+    padding: 5px;
+  }
+  .main__section__productos__jarritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .main__section__productos__jarritos img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__jarritos button {
+    margin: 15px;
+    padding: 5px;
+  }
+  .main__section__productos__botellas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 550px;
+    margin: 40px 10px 40px 10px;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .main__section__productos__botellas img {
+    width: 75%;
+    height: 80%;
+  }
+  .main__section__productos__botellas button {
+    margin: 15px;
+    padding: 5px;
+  }
 }
-.main__otros {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
+@media (min-width: 320px) and (max-width: 768px) {
+  .main__taza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    margin-top: 0%;
+  }
+  .main__taza button {
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+  }
+  .main__descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 0 20px;
+  }
+  .main__otros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 0 20px;
+  }
+  .main__otros article img {
+    height: 500px;
+  }
+}
+@media (min-width: 769px) {
+  .main__taza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 0px 20px 50px 50px;
+    margin-top: 0%;
+  }
+  .main__taza button {
+    margin-top: 15px;
+    width: 45%;
+    height: 30px;
+  }
+  .main__descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px 0 40px;
+  }
+  .main__otros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -37,9 +37,9 @@ header {
     }
 
     .header__hamburguesa {
-        position: fixed;
+        position: relative;
         top: auto;
-        right: 60px;
+        right: -30px;
         filter: drop-shadow(4px 4px 2px #282552);
     }
 

@@ -1,158 +1,204 @@
-.main {
+.main__categorias {
+    list-style: disc;
+    margin: 0 0 20px 30px;
+}
 
-    &__categorias {
-        list-style: disc;
-        margin: 0 0 20px 30px;
+@media (min-width:320px) and (max-width:768px) {
+
+    .main {
+        &__section__productos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            height: auto;
+            margin: 0px 10px 20px 20px;
+            overflow: hidden;
+
+            img {
+                width: 75%;
+                height: 80%;
+            }
+
+            button {
+                width: 50%;
+            }
+
+            &:hover {
+                box-shadow: 5px 20px 20px;
+                transition-duration: 200ms;
+            }
+        }
     }
+}
 
-    &__section__productos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto;
-        margin: 2rem;
-        gap: 2rem;
+@media (min-width:769px) {
 
-        &__buzos {
+    .main {
+
+        &__producto {
+
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 1;
-            grid-row: 1;
 
             img {
-                width: 75%;
-                height: 80%;
+                border-radius: 40px;
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
+            &:hover {
+                box-shadow: 5px 20px 20px;
+                transform: scale(1.1);
+                transition-duration: 200ms;
+                border-radius: 30px;
+                background: $bordercolor;
             }
         }
 
-        &__remeras {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 2;
-            grid-row: 1;
+        &__section__productos {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            margin: 2rem;
+            gap: 2rem;
+            margin-bottom: 0%;
 
-            img {
-                width: 75%;
-                height: 80%;
+            &__buzos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 1;
+                grid-row: 1;
+
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
+
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
-            }
-        }
+            &__remeras {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 2;
+                grid-row: 1;
 
-        &__tazas {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 3;
-            grid-row: 1;
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
 
-            img {
-                width: 75%;
-                height: 80%;
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
-            }
-        }
+            &__tazas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 3;
+                grid-row: 1;
 
-        &__fluo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 1;
-            grid-row: 2;
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
 
-            img {
-                width: 75%;
-                height: 80%;
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
-            }
-        }
+            &__fluo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 1;
+                grid-row: 2;
 
-        &__jarritos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 2;
-            grid-row: 2;
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
 
-            img {
-                width: 75%;
-                height: 80%;
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
-            }
-        }
+            &__jarritos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 2;
+                grid-row: 2;
 
-        &__botellas {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            height: 550px;
-            margin: 40px 10px 40px 10px;
-            border-style: double;
-            border-color: #414e79;
-            border-width: 20px;
-            grid-column: 3;
-            grid-row: 2;
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
 
-            img {
-                width: 75%;
-                height: 80%;
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
 
-            button {
-                margin: 15px;
-                padding: 5px;
+            &__botellas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                height: 550px;
+                margin: 40px 10px 40px 10px;
+                grid-column: 3;
+                grid-row: 2;
+
+                img {
+                    width: 75%;
+                    height: 80%;
+                }
+
+                button {
+                    margin: 15px;
+                    padding: 5px;
+                }
+
             }
         }
     }

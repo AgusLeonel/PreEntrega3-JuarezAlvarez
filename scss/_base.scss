@@ -23,6 +23,7 @@ p {
     text-align: justify;
     font-family: 'lora', serif;
     font-weight: 400;
+    color: white;
 }
 
 h1,
@@ -39,8 +40,11 @@ a {
 li {
     font-family: 'lora', serif;
     font-weight: 400;
+    color: white;
 }
 
 h1 {
     font-size: 3.5rem;
 }
+
+$bgcolor: linear-gradient(90deg, #282552 0%, #3a4e86 35%, #276b8a 100%)

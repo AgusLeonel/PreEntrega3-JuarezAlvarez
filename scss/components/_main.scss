@@ -1,8 +1,7 @@
 // ==== Main ==== //
 
 main {
-    background: #282552;
-    background: linear-gradient(90deg, #282552 0%, #3a4e86 37%, #276b8a 100%);
+    background: $bgcolor;
 }
 
 h2 {

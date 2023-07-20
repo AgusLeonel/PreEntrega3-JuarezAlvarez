@@ -19,7 +19,8 @@ a {
     color: white;
 }
 
-p, label {
+p,
+label {
     text-align: justify;
     font-family: 'lora', serif;
     font-weight: 400;
@@ -55,6 +56,10 @@ li {
 
 h1 {
     font-size: 3.5rem;
+}
+
+img {
+    object-fit: contain;
 }
 
 $bgcolor: linear-gradient(90deg, #282552 0%, #3a4e86 35%, #276b8a 100%);

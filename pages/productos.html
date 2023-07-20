@@ -19,7 +19,7 @@
     <header>
 
         <div>
-            <img src="../images/xuru-vic-kids.jpg" alt="xuru vic kids">
+            <a href="../index.html"><img src="../images/xuru-vic-kids.jpg" alt="xuru vic kids"></a>
             <h1> XURU </h1>
         </div>
 
@@ -107,7 +107,7 @@
                 <button> COMPRAR </button>
             </article>
 
-            <article class="main__tazas main__producto" >
+            <article class="main__tazas main__producto">
                 <img src="../images/taza-ceramica.jpg" alt="tazas de ceramica personalizadas">
                 <p> Tazas de cerámica personalizadas </p>
                 <a href="./taza-ceramica.html"> COMPRAR </a>
@@ -184,17 +184,17 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
-        <script>
-            window.addEventListener('DOMContentLoaded', () => {
-                const menuDesplegadoContent = document.querySelector('.menu-desplegado');
-    
-                menuDesplegadoContent.style.display = 'none'; // Ocultar el menú al cargar la página
-    
-                document.querySelector('.header__hamburguesa .navbar-toggler').addEventListener('click', () => {
-                    menuDesplegadoContent.style.display = menuDesplegadoContent.style.display === 'none' ? 'block' : 'none';
-                });
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const menuDesplegadoContent = document.querySelector('.menu-desplegado');
+
+            menuDesplegadoContent.style.display = 'none'; // Ocultar el menú al cargar la página
+
+            document.querySelector('.header__hamburguesa .navbar-toggler').addEventListener('click', () => {
+                menuDesplegadoContent.style.display = menuDesplegadoContent.style.display === 'none' ? 'block' : 'none';
             });
-        </script>
+        });
+    </script>
 
 </body>
 

@@ -22,7 +22,7 @@
     <header>
 
         <div>
-            <a href="../index.html"><img src="../images/xuru-vic-kids.jpg" alt="xuru vic kids"></a>
+            <a href="../index.html"><img src="../images/xuru-vic-kids.png" alt="xuru vic kids"></a>
             <h1> XURU </h1>
         </div>
 
@@ -93,7 +93,7 @@
 
             <address class="main__article">
                 <h2> Medios de Contacto </h2>
-                <ul>
+                <ul class="main__listas">
                     <li> +54 11 1111 1111</li>
                     <li> email@gmail.com </li>
                     <li> Av. Pres. Figueroa Alcorta 7597 </li>
@@ -106,32 +106,35 @@
                     <fieldset>
                         <div>
                             <label for="nombre">Ingresar nombre completo</label>
-                            <input type="text" id="nombre" placeholder="Nombre completo" class="main__input">
+                            <input type="text" id="nombre" placeholder="Nombre completo" class="main__input"
+                                name="nombre">
                         </div>
 
                         <div>
                             <label for="telefono">Ingresar teléfono</label>
-                            <input type="tel" id="telefono" placeholder="Teléfono" class="main__input">
+                            <input type="tel" id="telefono" placeholder="Teléfono" class="main__input" name="telefono">
                         </div>
 
                         <div>
                             <label for="email">Ingresar email</label>
-                            <input type="email" id="telefono" placeholder="Email" class="main__input">
+                            <input type="email" id="email" placeholder="Email" class="main__input" name="email">
                         </div>
 
                         <div>
                             <label for="direccion">Ingresar dirección</label>
-                            <input type="text" id="direccion" placeholder="Dirección" class="main__input">
+                            <input type="text" id="direccion" placeholder="Dirección" class="main__input"
+                                name="direccion">
                         </div>
 
                         <div>
                             <label for="motivo">Motivo de contacto</label>
-                            <textarea id="motivo" cols="30" rows="10" class="main__input__motivo"></textarea>
+                            <textarea id="motivo" cols="30" rows="10" class="main__input__motivo"
+                                name="motivo"></textarea>
                         </div>
 
                         <div>
-                            <input type="submit" value="Enviar" class="main__input">
-                            <input type="reset" value="Resetear" class="main__input">
+                            <input type="submit" value="Enviar" class="btn" class="main__input">
+                            <input type="reset" value="Resetear" class="btn" class="main__input">
                         </div>
                     </fieldset>
 
@@ -178,7 +181,7 @@
             <h3 class="footer__titulo"> Newsletter </h3>
             <form action="">
                 <input type="email" placeholder="Email" class="footer__input">
-                <input type="submit" placeholder="Enviar">
+                <input type="submit" placeholder="Enviar" class="btn">
             </form>
         </div>
 

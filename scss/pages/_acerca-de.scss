@@ -1,0 +1,61 @@
+@media (min-width: 375px) and (max-width: 768px) {
+
+    .main__acerca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 0px 10px 0px 20px;
+        padding: 10px;
+
+        &:hover {
+            box-shadow: 5px 20px 20px;
+            transition-duration: 200ms;
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1023px) {
+    .main__acerca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: auto;
+        margin: 40px 10px 40px 40px;
+        padding: 10px;
+
+        &:hover {
+            box-shadow: 5px 20px 20px;
+            transform: scale(1.1);
+            transition-duration: 200ms;
+            border-radius: 30px;
+            background: $bordercolor;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .main__acerca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        height: auto;
+        margin: 40px 40px 40px 40px;
+        padding: 10px;
+
+        &:hover {
+            box-shadow: 5px 20px 20px;
+            transform: scale(1.1);
+            transition-duration: 200ms;
+            border-radius: 30px;
+            background: $bordercolor;
+        }
+    }
+}
+
+// En está página cuando uso las herramientas en el navegador, cuando está en el ancho máximo me sale un espacio blanco abajo, creo que es porque el contenido es muy angosto.

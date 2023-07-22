@@ -1,0 +1,28 @@
+@media (min-width: 375px) and (max-width: 768px) {
+
+    .btn {
+        background-color: #7460ac;
+        border-radius: 10px;
+        border-color: #000000;
+        margin: 15px;
+        padding: 5px;
+    }
+}
+
+@media (min-width:769px) {
+
+    .btn {
+        background-color: #7460ac;
+        border-radius: 10px;
+        border-color: #000000;
+        margin: 15px;
+        padding: 5px;
+
+        &:hover {
+            background-color: #282552;
+            box-shadow: 3px 2px 2px #7460ac;
+            transition-duration: 300ms;
+            color: #ffffff;
+        }
+    }
+}
